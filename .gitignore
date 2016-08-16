@@ -1,1 +1,7 @@
+<<<<<<< HEAD
 secrets.py
+=======
+__pycache__
+.direnv
+.envrc
+>>>>>>> 276dfea1a5af1b8a8ccdf28dc19f7d171d08cbf6
