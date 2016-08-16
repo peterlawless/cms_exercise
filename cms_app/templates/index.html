@@ -1,9 +1,11 @@
 
 <h1> BLOGS!!!! VERY SIMPLE!!! </h1>
-{% csrf_token %}
 <label for="post">Post:</label>
 <!-- <textarea type="text" name="post" placeholder="Start typing..."/> -->
 <FORM ACTION="" METHOD="POST"><BR>
+  {% csrf_token %}
+  Name: <input type="text" name="who_created">
+  <p></p>
   <TEXTAREA NAME="post" COLS=40 ROWS=6 placeholder="Start typing...">
   </TEXTAREA>
   <P></P>
@@ -11,6 +13,7 @@
 
 <ol>
   {% for post in posts %}
+    {% csrf_token %}
     <li> {{ post.description }}</li>
     <button>Edit</button>
     <button>Delete</button>

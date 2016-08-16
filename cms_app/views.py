@@ -8,8 +8,7 @@ from .forms import BlogForm, Register
 def index(request):
     if request.method == 'POST':
         description = request.POST['post']
-        status = request.POST['status']
-        post = BlogPost(description=description, status=status)
+        post = BlogPost(description=description)
         post.save()
     #
     # dict_ = {
