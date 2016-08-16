@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import BlogPost
-from .forms import BlogForm, Register
+from .forms import BlogaForm, Register
 
 
 # Create your views here.
@@ -30,3 +30,10 @@ def index(request):
 def registration(request):
     if request.method == 'POST':
         form = Register(request.POST)
+        username = form.get('username', None)
+        first_name = form.get('first name', None)
+        last_name = form.get('last name', None)
+        password = form.get('password', None)
+        email = form.get('email', None)
+    if username and password and email:
+        
