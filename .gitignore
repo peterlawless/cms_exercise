@@ -1,3 +1,5 @@
 __pycache__
 .direnv
 .envrc
+cms/secrets.py
+cms/__pycache__
