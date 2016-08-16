@@ -74,7 +74,20 @@ WSGI_APPLICATION = 'cms.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
+<<<<<<< HEAD
 
+=======
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'cms',
+        'USERNAME': 'taradavis',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
+>>>>>>> bbcdd467a6aecd71c369bc48447ca7234a664f0a
 
 
 # Password validation
