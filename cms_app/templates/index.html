@@ -1,2 +1,24 @@
-<!-- {% if blogs %} -->
+
 <h1> blogs </h1>
+{% csrf_token %}
+<label for="post">Post:</label>
+<!-- <textarea type="text" name="post" placeholder="Start typing..."/> -->
+<FORM ACTION="" METHOD="POST"><BR>
+  <TEXTAREA NAME="post" COLS=40 ROWS=6 placeholder="Start typing...">
+  </TEXTAREA>
+  <P></P>
+  <INPUT TYPE=SUBMIT VALUE="submit"> </FORM>
+<!--
+<ol>
+  {% for post in posts %}
+    <li> {{ post.description }}</li>
+    <button>Edit</button>
+    <button>Delete</button>
+  {% endfor %}
+</ol> -->
+
+  <!-- Name: <input type="text" name="usrname">
+  <input type="submit">
+</form>
+
+<textarea name="comment" form="usrform">Enter text here...</textarea> -->
