@@ -18,7 +18,7 @@ def index(request):
     #     "backlog": 3,
     #     "done": 4
     # }
-    posts = sorted(BlogPost.objects.all())  # key=lambda x: dict_[x.status])
+    posts = BlogPost.objects.all()  # key=lambda x: dict_[x.status])
 
     context = {
         'posts': posts,
@@ -27,12 +27,12 @@ def index(request):
     return render(request, 'index.html', context)
 
 
-def registration(request):
-    if request.method == 'POST':
-        form = Register(request.POST)
-        username = form.get('username', None)
-        first_name = form.get('first name', None)
-        last_name = form.get('last name', None)
-        password = form.get('password', None)
-        email = form.get('email', None)
-    if username and password and email:
+# def registration(request):
+#     if request.method == 'POST':
+#         form = Register(request.POST)
+#         username = form.get('username', None)
+#         first_name = form.get('first name', None)
+#         last_name = form.get('last name', None)
+#         password = form.get('password', None)
+#         email = form.get('email', None)
+#     if username and password and email:
