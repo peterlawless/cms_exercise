@@ -2,7 +2,7 @@ from django.db import models
 
 
 class BlogPost(models.Model):
-    description = models.TextArea()
+    description = models.TextField()
     who_created = models.CharField(max_length=35)
     when_created = models.DateField()
     who_updated = models.CharField(max_length=35)
